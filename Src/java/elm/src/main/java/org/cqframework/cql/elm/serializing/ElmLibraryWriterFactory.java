@@ -20,11 +20,11 @@ public class ElmLibraryWriterFactory {
         var providers = providers(false);
         if (providers.hasNext()) {
             ElmLibraryWriterProvider p = providers.next();
-            if (providers.hasNext()) {
-                throw new RuntimeException(String.join(" ",
-                "Multiple ElmLibraryWriterProviders found on the classpath.",
-                "You need to remove a reference to either the 'elm-jackson' or the 'elm-jaxb' package"));
-            }
+            // if (providers.hasNext()) {
+            //     throw new RuntimeException(String.join(" ",
+            //     "Multiple ElmLibraryWriterProviders found on the classpath.",
+            //     "You need to remove a reference to either the 'elm-jackson' or the 'elm-jaxb' package"));
+            // }
 
             return p.create(contentType);
         }

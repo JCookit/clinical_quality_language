@@ -1,0 +1,65 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "org.cqframework.cql.cql2elm.cli.Main",
+            "projectName": "cql-to-elm-cli"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "org.cqframework.cql.tools.formatter.Main",
+            "projectName": "cql-formatter"
+        },
+        {
+            "type": "java",
+            "name": "Main(1)",
+            "request": "launch",
+            "mainClass": "org.cqframework.cql.tools.parsetree.Main",
+            "projectName": "cql-parsetree"
+        },
+        {
+            "type": "java",
+            "name": "CqlTranslator",
+            "request": "launch",
+            "mainClass": "org.cqframework.cql.cql2elm.cli",
+            "projectName": "cql-to-elm-cli",
+            "args": "-input D:/microsoftdev/git/firely-cql-sdk/Demo/cql/myinput/jeffcou1.cql -f JSON -locators true -result-types true",
+            "classPaths": []
+        },
+        {
+            "type": "java",
+            "name": "Main(2)",
+            "request": "launch",
+            "mainClass": "org.cqframework.cql.Main",
+            "projectName": "cql"
+        },
+        {
+            "type": "java",
+            "name": "MapperCodeGen",
+            "request": "launch",
+            "mainClass": "org.cqframework.cql.elm.MapperCodeGen",
+            "projectName": "elm-fhir"
+        },
+        {
+            "type": "java",
+            "name": "Main(3)",
+            "request": "launch",
+            "mainClass": "org.cqframework.cql.tools.xsd2modelinfo.Main",
+            "projectName": "xsd-to-modelinfo"
+        }
+    ]
+}

@@ -19,11 +19,11 @@ public class ModelInfoReaderFactory {
         var providers = providers(false);
         if (providers.hasNext()) {
             ModelInfoReaderProvider p = providers.next();
-            if (providers.hasNext()) {
-                throw new RuntimeException(String.join(" ",
-                "Multiple ModelInfoReaderProviders found on the classpath.",
-                "You need to remove a reference to either the 'model-jackson' or the 'model-jaxb' package"));
-            }
+            // if (providers.hasNext()) {
+            //     throw new RuntimeException(String.join(" ",
+            //     "Multiple ModelInfoReaderProviders found on the classpath.",
+            //     "You need to remove a reference to either the 'model-jackson' or the 'model-jaxb' package"));
+            // }
 
             return p.create(contentType);
         }
